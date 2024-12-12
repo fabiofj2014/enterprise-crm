@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/scrollbar.css';
+@import './styles/button.css';
+
+/* Theme System */
+:root {
+  color-scheme: light;
+  --card-bg: theme('colors.white');
+  --card-border: theme('colors.gray.200');
+  --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --text-primary: theme('colors.gray.900');
+  --text-secondary: theme('colors.gray.500');
+  --bg-primary: theme('colors.gray.50');
+  --bg-secondary: theme('colors.white');
+}
+
+.dark {
+  color-scheme: dark;
+  --card-bg: theme('colors.gray.800');
+  --card-border: theme('colors.gray.700');
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --text-primary: theme('colors.gray.100');
+  --text-secondary: theme('colors.gray.400');
+  --bg-primary: theme('colors.gray.900');
+  --bg-secondary: theme('colors.gray.800');
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  @apply rounded-lg transition-all duration-200;
+}
+
+/* Transitions */
+.theme-transition {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

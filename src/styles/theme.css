@@ -1,0 +1,74 @@
+/* Design Tokens */
+:root {
+  /* Brand Colors */
+  --brand-primary: 59 130 246;    /* #3B82F6 */
+  --brand-secondary: 99 102 241;  /* #6366F1 */
+
+  /* Backgrounds */
+  --bg-primary: 249 250 251;      /* #F9FAFB */
+  --bg-secondary: 255 255 255;    /* #FFFFFF */
+  --bg-tertiary: 243 244 246;     /* #F3F4F6 */
+  
+  /* Text Colors */
+  --text-primary: 17 24 39;       /* #111827 */
+  --text-secondary: 75 85 99;     /* #4B5563 */
+  --text-tertiary: 107 114 128;   /* #6B7280 */
+  
+  /* Border Colors */
+  --border-primary: 229 231 235;  /* #E5E7EB */
+  --border-secondary: 209 213 219; /* #D1D5DB */
+  
+  /* Status Colors */
+  --success: 22 163 74;           /* #16A34A */
+  --warning: 217 119 6;           /* #D97706 */
+  --error: 220 38 38;             /* #DC2626 */
+  --info: 37 99 235;              /* #2563EB */
+}
+
+/* Component Base Styles */
+.card {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         rounded-lg
+         shadow-sm;
+}
+
+.input {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         placeholder:text-[rgb(var(--text-tertiary))]
+         rounded-md
+         focus:ring-2 focus:ring-[rgb(var(--brand-primary))]
+         focus:border-transparent;
+}
+
+.button-primary {
+  @apply bg-[rgb(var(--brand-primary))]
+         hover:bg-[rgb(var(--brand-secondary))]
+         text-white
+         font-medium
+         rounded-md;
+}
+
+.button-secondary {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         hover:bg-[rgb(var(--bg-tertiary))]
+         font-medium
+         rounded-md;
+}
+
+.nav-item {
+  @apply text-[rgb(var(--text-secondary))]
+         hover:text-[rgb(var(--text-primary))]
+         hover:bg-[rgb(var(--bg-tertiary))]
+         rounded-md;
+}
+
+.nav-item-active {
+  @apply bg-[rgb(var(--brand-primary))]
+         text-white;
+}

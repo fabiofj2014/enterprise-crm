@@ -1,0 +1,22 @@
+/* Light Theme */
+:root[data-theme="light"] {
+  /* Backgrounds */
+  --bg-primary: var(--gray-50);     /* Main background */
+  --bg-secondary: 255 255 255;      /* Card/elevated background */
+  --bg-tertiary: var(--gray-100);   /* Subtle background */
+  
+  /* Text */
+  --text-primary: var(--gray-900);   /* Main text */
+  --text-secondary: var(--gray-600); /* Secondary text */
+  --text-tertiary: var(--gray-500);  /* Disabled/subtle text */
+  
+  /* Borders */
+  --border-primary: var(--gray-200);
+  --border-secondary: var(--gray-300);
+  
+  /* Interactive */
+  --interactive-primary: var(--brand-primary);
+  --interactive-hover: var(--brand-secondary);
+  --interactive-bg: var(--gray-100);
+  --interactive-bg-hover: var(--gray-200);
+}

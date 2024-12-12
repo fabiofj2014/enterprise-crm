@@ -1,0 +1,22 @@
+/* Dark Theme */
+:root[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-primary: 23 23 23;           /* #171717 - Main background */
+  --bg-secondary: 38 38 38;         /* #262626 - Card/elevated background */
+  --bg-tertiary: 64 64 64;          /* #404040 - Subtle background */
+  
+  /* Text */
+  --text-primary: 255 255 255;      /* Main text */
+  --text-secondary: 209 213 219;    /* Secondary text */
+  --text-tertiary: 156 163 175;     /* Disabled/subtle text */
+  
+  /* Borders */
+  --border-primary: 38 38 38;       /* #262626 */
+  --border-secondary: 64 64 64;     /* #404040 */
+  
+  /* Interactive */
+  --interactive-primary: var(--brand-primary);
+  --interactive-hover: var(--brand-secondary);
+  --interactive-bg: 38 38 38;       /* #262626 */
+  --interactive-bg-hover: 64 64 64; /* #404040 */
+}

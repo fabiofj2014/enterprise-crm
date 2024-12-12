@@ -1,0 +1,25 @@
+/* Base Colors */
+:root {
+  /* Brand Colors */
+  --brand-primary: 59 130 246;    /* #3B82F6 - Primary blue */
+  --brand-secondary: 99 102 241;  /* #6366F1 - Secondary blue */
+
+  /* Background Colors */
+  --bg-primary: 249 250 251;      /* #F9FAFB - Main background */
+  --bg-secondary: 255 255 255;    /* #FFFFFF - Card/elevated background */
+  --bg-tertiary: 243 244 246;     /* #F3F4F6 - Subtle background */
+  
+  /* Text Colors */
+  --text-primary: 17 24 39;       /* #111827 - Main text */
+  --text-secondary: 75 85 99;     /* #4B5563 - Secondary text */
+  --text-tertiary: 107 114 128;   /* #6B7280 - Disabled text */
+  
+  /* Border Colors */
+  --border-primary: 229 231 235;  /* #E5E7EB */
+  
+  /* Status Colors */
+  --success: 22 163 74;           /* #16A34A */
+  --warning: 217 119 6;           /* #D97706 */
+  --error: 220 38 38;             /* #DC2626 */
+  --info: 37 99 235;             /* #2563EB */
+}

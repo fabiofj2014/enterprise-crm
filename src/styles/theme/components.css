@@ -1,0 +1,47 @@
+/* Component Base Styles */
+.card {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         rounded-lg
+         shadow-sm;
+}
+
+.input {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         placeholder:text-[rgb(var(--text-tertiary))]
+         rounded-md
+         focus:ring-2 focus:ring-[rgb(var(--brand-primary))]
+         focus:border-transparent;
+}
+
+.button-primary {
+  @apply bg-[rgb(var(--brand-primary))]
+         hover:bg-[rgb(var(--brand-secondary))]
+         text-white
+         font-medium
+         rounded-md;
+}
+
+.button-secondary {
+  @apply bg-[rgb(var(--bg-secondary))]
+         border border-[rgb(var(--border-primary))]
+         text-[rgb(var(--text-primary))]
+         hover:bg-[rgb(var(--bg-tertiary))]
+         font-medium
+         rounded-md;
+}
+
+.nav-item {
+  @apply text-[rgb(var(--text-secondary))]
+         hover:text-[rgb(var(--text-primary))]
+         hover:bg-[rgb(var(--bg-tertiary))]
+         rounded-md;
+}
+
+.nav-item-active {
+  @apply bg-[rgb(var(--brand-primary))]
+         text-white;
+}

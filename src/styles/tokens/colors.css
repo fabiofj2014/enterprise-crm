@@ -1,0 +1,102 @@
+/* Color Tokens */
+:root {
+  /* Brand Colors */
+  --brand-primary: 37 99 235;     /* #2563EB - Professional blue */
+  --brand-secondary: 79 70 229;   /* #4F46E5 - Supporting purple */
+  
+  /* Neutral Colors - Light Theme */
+  --neutral-50: 249 250 251;      /* #F9FAFB */
+  --neutral-100: 243 244 246;     /* #F3F4F6 */
+  --neutral-200: 229 231 235;     /* #E5E7EB */
+  --neutral-300: 209 213 219;     /* #D1D5DB */
+  --neutral-400: 156 163 175;     /* #9CA3AF */
+  --neutral-500: 107 114 128;     /* #6B7280 */
+  --neutral-600: 75 85 99;        /* #4B5563 */
+  --neutral-700: 55 65 81;        /* #374151 */
+  --neutral-800: 31 41 55;        /* #1F2937 */
+  --neutral-900: 17 24 39;        /* #111827 */
+
+  /* Light Theme */
+  --color-bg-primary: 255 255 255;      /* #FFFFFF */
+  --color-bg-secondary: 249 250 251;    /* #F9FAFB */
+  --color-bg-tertiary: 243 244 246;     /* #F3F4F6 */
+  
+  --color-text-primary: 17 24 39;       /* #111827 */
+  --color-text-secondary: 75 85 99;     /* #4B5563 */
+  --color-text-tertiary: 107 114 128;   /* #6B7280 */
+  
+  --color-border: 229 231 235;          /* #E5E7EB */
+  --color-border-hover: 209 213 219;    /* #D1D5DB */
+  
+  /* Semantic Colors */
+  --color-success: 22 163 74;      /* #16A34A */
+  --color-success-light: 220 252 231;   /* #DCFCE7 */
+  --color-warning: 217 119 6;      /* #D97706 */
+  --color-warning-light: 254 243 199;   /* #FEF3C7 */
+  --color-error: 220 38 38;        /* #DC2626 */
+  --color-error-light: 254 226 226;     /* #FEE2E2 */
+  --color-info: 37 99 235;         /* #2563EB */
+  --color-info-light: 219 234 254;      /* #DBEAFE */
+
+  /* Interactive Elements */
+  --color-accent: var(--brand-primary);
+  --color-accent-hover: 29 78 216;      /* #1D4ED8 */
+  --color-accent-light: 219 234 254;    /* #DBEAFE */
+}
+
+/* Dark Theme Colors */
+:root[data-theme="dark"] {
+  /* Background Colors */
+  --color-bg-primary: 23 23 23;         /* #171717 */
+  --color-bg-secondary: 38 38 38;       /* #262626 */
+  --color-bg-tertiary: 64 64 64;        /* #404040 */
+  
+  /* Text Colors */
+  --color-text-primary: 255 255 255;    /* #FFFFFF */
+  --color-text-secondary: 209 213 219;  /* #D1D5DB */
+  --color-text-tertiary: 156 163 175;   /* #9CA3AF */
+  
+  /* Border Colors */
+  --color-border: 38 38 38;             /* #262626 */
+  --color-border-hover: 64 64 64;       /* #404040 */
+  
+  /* Interactive Elements */
+  --color-accent: 59 130 246;           /* #3B82F6 */
+  --color-accent-hover: 37 99 235;      /* #2563EB */
+  --color-accent-light: 30 58 138;      /* #1E3A8A */
+  
+  /* Status Colors - Adjusted for Dark Theme */
+  --color-success: 34 197 94;           /* #22C55E */
+  --color-success-light: 20 83 45;      /* #14532D */
+  --color-warning: 234 179 8;           /* #EAB308 */
+  --color-warning-light: 113 63 18;     /* #713F12 */
+  --color-error: 239 68 68;             /* #EF4444 */
+  --color-error-light: 127 29 29;       /* #7F1D1D */
+  --color-info: 59 130 246;             /* #3B82F6 */
+  --color-info-light: 30 58 138;        /* #1E3A8A */
+  
+  /* Hover and Active States */
+  --color-hover: 64 64 64;              /* #404040 */
+  --color-active: 82 82 82;             /* #525252 */
+}
+
+/* Utility Classes for Status Colors */
+.status-success {
+  @apply bg-[rgb(var(--color-success-light))] 
+         text-[rgb(var(--color-success))];
+}
+
+.status-warning {
+  @apply bg-[rgb(var(--color-warning-light))]
+         text-[rgb(var(--color-warning))];
+}
+
+.status-error {
+  @apply bg-[rgb(var(--color-error-light))]
+         text-[rgb(var(--color-error))];
+}
+
+.status-info {
+  @apply bg-[rgb(var(--color-info-light))]
+         text-[rgb(var(--color-info))];
+}

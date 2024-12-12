@@ -1,0 +1,34 @@
+/* Card Component */
+.card {
+  @apply bg-[rgb(var(--color-bg-secondary))] 
+         border border-[rgb(var(--color-border))]
+         rounded-lg shadow-sm
+         theme-transition;
+}
+
+/* Input Component */
+.input {
+  @apply bg-[rgb(var(--color-bg-primary))] 
+         border border-[rgb(var(--color-border))]
+         text-[rgb(var(--color-text-primary))]
+         rounded-md
+         focus:ring-2 focus:ring-[rgb(var(--color-accent))]
+         theme-transition;
+}
+
+/* Button Component */
+.button {
+  @apply bg-[rgb(var(--color-accent))]
+         hover:bg-[rgb(var(--color-accent-hover))]
+         text-white
+         rounded-md
+         theme-transition;
+}
+
+/* Table Component */
+.table {
+  @apply bg-[rgb(var(--color-bg-secondary))]
+         border-[rgb(var(--color-border))]
+         text-[rgb(var(--color-text-primary))]
+         theme-transition;
+}

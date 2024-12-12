@@ -1,0 +1,26 @@
+/* Base Theme */
+:root {
+  /* Backgrounds */
+  --bg-primary: 249 250 251;      /* #F9FAFB */
+  --bg-secondary: 255 255 255;    /* #FFFFFF */
+  --bg-tertiary: 243 244 246;     /* #F3F4F6 */
+  
+  /* Text Colors */
+  --text-primary: 31 41 55;       /* #1F2937 - Dark gray for main text */
+  --text-secondary: 75 85 99;     /* #4B5563 - Medium gray for secondary text */
+  --text-tertiary: 107 114 128;   /* #6B7280 - Light gray for disabled text */
+  
+  /* Borders */
+  --border-primary: 229 231 235;  /* #E5E7EB */
+  --border-secondary: 209 213 219;/* #D1D5DB */
+  
+  /* Brand Colors */
+  --brand-primary: 59 130 246;    /* #3B82F6 */
+  --brand-secondary: 99 102 241;  /* #6366F1 */
+  
+  /* Status Colors */
+  --success: 22 163 74;           /* #16A34A */
+  --warning: 217 119 6;           /* #D97706 */
+  --error: 220 38 38;             /* #DC2626 */
+  --info: 37 99 235;              /* #2563EB */
+}

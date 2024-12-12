@@ -1,0 +1,28 @@
+.card {
+  @apply bg-[rgb(var(--color-bg-primary))]
+         border border-[rgb(var(--color-border))]
+         rounded-lg
+         shadow-sm
+         transition-all duration-200;
+}
+
+.card-header {
+  @apply p-4
+         border-b border-[rgb(var(--color-border))]
+         flex items-center justify-between;
+}
+
+.card-body {
+  @apply p-4;
+}
+
+.card-footer {
+  @apply p-4
+         border-t border-[rgb(var(--color-border))]
+         flex items-center justify-end;
+}
+
+.card-hover {
+  @apply hover:bg-[rgb(var(--color-hover))]
+         hover:border-[rgb(var(--color-border))];
+}
