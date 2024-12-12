@@ -16,6 +16,86 @@ interface LeadState {
 export const useLeadStore = create<LeadState>((set) => ({
   leads: [
     {
+      id: '3',
+      name: 'Carlos Oliveira',
+      company: 'Digital Solutions',
+      email: 'carlos@digitalsolutions.com',
+      phone: '11987654321',
+      status: 'proposal',
+      score: {
+        engagement: 20,
+        interactions: 18,
+        demographics: 15,
+        behavior: 12,
+        budget: 15
+      },
+      totalScore: 80,
+      qualification: 'hot',
+      source: 'Referral',
+      assignedTo: '1',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      customFields: {},
+      activities: [
+        {
+          id: '1',
+          type: 'call',
+          description: 'Primeira reunião de apresentação',
+          date: new Date(),
+          createdAt: new Date()
+        }
+      ],
+      tags: ['enterprise', 'high-value']
+    },
+    {
+      id: '4',
+      name: 'Ana Costa',
+      company: 'Marketing Pro',
+      email: 'ana@marketingpro.com',
+      phone: '11976543210',
+      status: 'negotiation',
+      score: {
+        engagement: 22,
+        interactions: 20,
+        demographics: 18,
+        behavior: 15,
+        budget: 18
+      },
+      totalScore: 93,
+      qualification: 'hot',
+      source: 'Event',
+      assignedTo: '1',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      customFields: {},
+      activities: [],
+      tags: ['marketing', 'agency']
+    },
+    {
+      id: '5',
+      name: 'Pedro Santos',
+      company: 'Retail Plus',
+      email: 'pedro@retailplus.com',
+      phone: '11965432109',
+      status: 'contacted',
+      score: {
+        engagement: 12,
+        interactions: 8,
+        demographics: 10,
+        behavior: 5,
+        budget: 8
+      },
+      totalScore: 43,
+      qualification: 'warm',
+      source: 'Website',
+      assignedTo: '1',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      customFields: {},
+      activities: [],
+      tags: ['retail', 'small-business']
+    },
+    {
       id: '1',
       name: 'João Silva',
       company: 'Tech Brasil',
