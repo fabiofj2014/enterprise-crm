@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Logo from './Logo';
 
 export default function DashboardLayout() {
   return (
@@ -9,7 +10,7 @@ export default function DashboardLayout() {
       <div className="flex h-screen">
         <div className="w-64 bg-[rgb(var(--bg-secondary))] border-r border-[rgb(var(--border-primary))]">
           <div className="h-16 flex items-center px-6 border-b border-[rgb(var(--border-primary))]">
-            <h1 className="text-xl font-bold text-gray-900">CRM Empresarial</h1>
+            <Logo />
           </div>
           <Sidebar />
         </div>
