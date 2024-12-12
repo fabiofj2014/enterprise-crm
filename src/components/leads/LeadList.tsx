@@ -77,7 +77,11 @@ const columns = [
   }
 ];
 
-export default function LeadList() {
+interface LeadListProps {
+  onLeadSelect?: (lead: Lead) => void;
+}
+
+export default function LeadList({ onLeadSelect }: LeadListProps) {
   const [showAddLead, setShowAddLead] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const { leads, customFields, addLead } = useLeadStore();
@@ -153,7 +157,7 @@ export default function LeadList() {
           <Table
             columns={columns}
             data={filteredLeads}
-            onRowClick={(lead) => console.log('Lead clicked:', lead)}
+            onRowClick={onLeadSelect}
           />
         </Card>
       )}
